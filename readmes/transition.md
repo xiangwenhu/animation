@@ -24,8 +24,10 @@
     1、ease：逐渐变慢, 贝塞尔曲线(0.25, 0.1, 0.25, 1.0)   
     2、linear：匀速，linear 贝塞尔曲线(0.0, 0.0, 1.0, 1.0)   
     3、ease-in：加速，ease-in 贝塞尔曲线(0.42, 0, 1.0, 1.0)   
-    4、ease-out：减速），ease-out贝塞尔曲线(0, 0, 0.58, 1.0)   
+    4、ease-out：减速，ease-out贝塞尔曲线(0, 0, 0.58, 1.0)   
     5、ease-in-out：加速然后减，ease-in-out 贝塞尔曲线(0.42, 0, 0.58, 1.0)   
+
+  这里的取值还有一种steps函数，可以参考[深入理解CSS过渡transition](https://www.cnblogs.com/xiaohuochai/p/5347930.html)  
 
 ##  Transition事件
 * [transitioncancel](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/transitioncancel_event)  
@@ -55,9 +57,18 @@ transition.addEventListener('transitioncancel', () => {
 [雪花](../css/transition/snow.html)
 ![](../img/css/snow.gif)
 
+### 类似外卖的添加到购物车  
+因为transition只能定义开始和结束，不能定义中间态，所以没有抛物曲线效果。   
+个人还有以下思路：   
+1. 多段transition
+2. 贝塞尔曲线
+3. animation， 也许也有难度   
+[购物车添加](../css/transition/prod.html)   
+![](../img/css/car.gif)
 
 
 > [CSS Transitions](https://www.w3.org/TR/css-transitions-1/)   
 [Using CSS transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)    
 [TransitionEventSection](https://developer.mozilla.org/en-US/docs/Web/API/TransitionEvent)  
-[css-transitions | Can I Use](https://caniuse.com/#feat=css-transitions)
+[css-transitions | Can I Use](https://caniuse.com/#feat=css-transitions)   
+[深入理解CSS过渡transition](https://www.cnblogs.com/xiaohuochai/p/5347930.html)  
