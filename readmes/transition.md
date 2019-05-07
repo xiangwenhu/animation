@@ -57,12 +57,7 @@ transition.addEventListener('transitioncancel', () => {
 [雪花](../css/transition/snow.html)    
 ![](../img/css/snow.gif)
 
-### 类似外卖的添加到购物车  
-因为transition只能定义开始和结束，不能定义中间态，所以没有抛物曲线效果。   
-个人还有以下思路：   
-1. 多段transition
-2. 贝塞尔曲线
-3. animation， 也许也有难度   
+### 类似外卖的添加到购物车   
 [购物车添加](../css/transition/prod.html)   
 ![](../img/css/car.gif)
 

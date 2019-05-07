@@ -164,7 +164,7 @@
         function transition() {
             var targetPos = getTargetPos();
 
-            pointEl.style.transition = `top 500ms ease-in,left 500ms ease-in`;
+            pointEl.style.transition = `top 500ms ease-in,left 500ms linear`;
             pointEl.style.top = numberToPx(targetPos.y);
             pointEl.style.left = numberToPx(targetPos.x);
         }
