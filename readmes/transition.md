@@ -50,11 +50,11 @@ transition.addEventListener('transitioncancel', () => {
 ## 简单的Demo
 
 ### 内置贝塞尔函数运动效果
-[贝塞尔曲线运动](../css/transition/timing-fun.html)
+[贝塞尔曲线运动](../css/transition/timing-fun.html)    
 ![](../img/css/time-fun.gif)
 
 ### 雪花飘飘
-[雪花](../css/transition/snow.html)
+[雪花](../css/transition/snow.html)    
 ![](../img/css/snow.gif)
 
 ### 类似外卖的添加到购物车  
